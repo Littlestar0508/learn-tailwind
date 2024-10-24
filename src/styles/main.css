@@ -598,11 +598,6 @@ abbr[title] {
   margin-bottom: 2.5rem;
 }
 
-.my-56 {
-  margin-top: 14rem;
-  margin-bottom: 14rem;
-}
-
 .block {
   display: block;
 }
@@ -675,6 +670,14 @@ abbr[title] {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .bg-blue-200 {
@@ -756,8 +759,8 @@ abbr[title] {
   color: #bbaf83;
 }
 
-.text-pesto-900 {
-  color: #1c180a;
+.border-pesto-300 {
+  border-color: #bbaf83;
 }
 
 /* base 스타일 재구성 */
