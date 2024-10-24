@@ -91,9 +91,31 @@
   }
 }
 
+body {
+  background: theme("colors.slate.900");
+}
+
+@media screen(sm) {
+  body {
+    background: theme("colors.slate.700");
+  }
+}
+
+@media screen(md) {
+  body {
+    background: theme("colors.slate.500");
+  }
+}
+
+@media screen(lg) {
+  body {
+    background: theme("colors.slate.200");
+  }
+}
+
 /* 스타일 재사용 */
 .avatar-card {
-  @apply w-[280px] p-6 flex flex-col md:flex-row gap-6 items-center justify-center mx-auto rounded-lg shadow-lg bg-slate-100 md:grid md:grid-cols-[120px_1fr] md:w-[500px];
+  @apply w-[280px] p-6 flex flex-col md:flex-row gap-6 items-center justify-center rounded-lg shadow-lg bg-slate-100 md:grid md:grid-cols-[120px_1fr] md:w-[500px];
 
   .avatar-card__image {
     @apply w-20 h-20 self-center rounded-full hover:border-solid hover:border-2 hover:border-green-600;
