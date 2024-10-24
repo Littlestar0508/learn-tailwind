@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration-line: none;
+}
+
+.button {
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .button {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(30 41 59 / var(--tw-text-opacity));
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -617,12 +651,12 @@ video {
   justify-content: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -646,6 +680,11 @@ video {
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-lime-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 163 13 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -713,13 +752,25 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.text-pesto-300 {
+  color: #bbaf83;
+}
+
+.text-pesto-900 {
+  color: #1c180a;
+}
+
+/* base 스타일 재구성 */
+
+/* 버튼 컴포넌트 */
+
+/* 사용자 정의 속성 */
+
 /* 스타일 재사용 */
 
 .avatar-card {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 14rem;
-  margin-bottom: 14rem;
   display: flex;
   width: 280px;
   flex-direction: column;
@@ -901,11 +952,6 @@ video {
   .md\:bg-green-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-  }
-
-  .md\:bg-purple-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(216 180 254 / var(--tw-bg-opacity));
   }
 
   .md\:bg-violet-500 {
