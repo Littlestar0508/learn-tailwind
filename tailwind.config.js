@@ -24,7 +24,8 @@ module.exports = {
       },
       fontFamily: {
         suit: ["SUIT Variable"],
-        pertendard: ["Pretendard Variable"],
+        pertendard: ["Pretendard Variable", "sans-serif"],
+        "noto-serif": ["Noto Serif KR", "serif"],
       },
     },
   },
