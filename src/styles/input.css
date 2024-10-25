@@ -22,3 +22,7 @@
     @apply bg-Gray-600;
   }
 }
+
+.container {
+  @apply flex flex-col justify-center items-center border text-lg leading-normal font-[bold] m-2 p-4 border-solid border-[#f00];
+}
